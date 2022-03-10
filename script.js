@@ -7,10 +7,12 @@ var pointPerClick = 1;
 var pointPerClickEl = document.getElementById("pointPerClick");
 var powerup1El = document.getElementById("cookiePowerup1");
 var powerup2El = document.getElementById("cookiePowerup2");
+var formEl = document.getElementById("form");
 
 function click(e){
     clickCounter += pointPerClick;
     clickCounterEl.innerHTML = clickCounter;
+    formEl.currentScore.value = clickCounter;
 }
 function powerup1(e){
     pointPerClick += 2;
