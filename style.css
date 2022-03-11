@@ -1,9 +1,13 @@
-#clickCounter, #pointPerClick{
+#clickCounter{
     font-size: 300%;
+}
+#pointPerClick{
+    font-size: 150%;
 }
 
 #cookie{
     width:250px;
+    border-radius:100%
 }
 
 .powerup{

@@ -5,6 +5,7 @@ var clickCounter = 0;
 var clickCounterEl = document.getElementById("clickCounter");
 var pointPerClick = 1;
 var pointPerClickEl = document.getElementById("pointPerClick");
+
 var powerup1El = document.getElementById("cookiePowerup1");
 var powerup2El = document.getElementById("cookiePowerup2");
 var formEl = document.getElementById("form");
@@ -40,6 +41,7 @@ cookieEl.addEventListener("mouseup",mouseup);
 powerup1El.addEventListener("mousedown", function(e){
     powerup1El.style.backgroundColor = "black";
 })
+
 powerup1El.addEventListener("mouseup", function(e){
     powerup1El.style.backgroundColor = "white";
 })

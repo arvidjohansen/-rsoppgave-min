@@ -9,18 +9,20 @@
     
 </head>
 <body>
-    <div class="">
+    <div>
+        Points: 
+        <span id="clickCounter">0</span>
+    </div>
+
+    <div>
         Point per click: 
         <span id="pointPerClick">1</span>
     </div>
+
     <div class="cookie-wrapper">
         <img id="cookie" src="cookie.png" \>
-        
     </div>
-    Points: 
-    <span id="clickCounter">
-        0
-    </span>
+    
     <div class="powerup-wrapper">
         <img class="powerup" id="cookiePowerup1" src="cookie+2.png">
         <img class="powerup" id="cookiePowerup2" src="cookie+10.png">
@@ -32,9 +34,49 @@
         <label for="name">Navn:</label>
         <input type="text" name="name">
         
-        <input type="submit" value="Lagre">
+        <input type="submit" value="Lagre highscore">
     </form>
-    
+
+    <div id="highScoreList">
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        Navn
+                    </th>
+                    <th>
+                        Score
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Arvid
+                    </td>
+                    <td>
+                        12300
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Erik
+                    </td>
+                    <td>
+                        12100
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Alf Morten
+                    </td>
+                    <td>
+                        11000
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
